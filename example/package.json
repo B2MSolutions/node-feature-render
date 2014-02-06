@@ -1,0 +1,17 @@
+{
+  "name": "node-feature-require-example",
+  "version": "0.0.1",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "start": "node index.js"
+  },
+  "author": { "name": "B2M Solutions", "url": "https://github.com/B2MSolutions" },
+  "contributors": [
+    { "name": "Roy Lines", "url":"https://github.com/roylines" }
+  ],
+	"dependencies": {
+    "express": "*",
+    "ejs": "*"
+  }
+}
