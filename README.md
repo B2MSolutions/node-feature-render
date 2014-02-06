@@ -31,7 +31,7 @@ If no view is found or no feature toggle is passed the original view is rendered
 In the [example](https://github.com/B2MSolutions/node-feature-render/tree/master/example), 
 if you browse to http://localhost:8000, then the default view called *index.ejs* will be rendered. 
 
-Passing in a feature toggle called *toggle1 in the query string will result in *index-toggle1.ejs* being rendered.
+Passing in a feature toggle called *toggle1* in the query string will result in *index-toggle1.ejs* being rendered.
 
 If you pass in the *toggle2* feature toggle by browsing to http://localhost:8000?ft=toggle2, *index.ejs* will be rendered as there is no overloaded view for toggle2.
 
