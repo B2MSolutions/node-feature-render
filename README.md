@@ -18,7 +18,6 @@ var express = require('express'),
 
 app.engine('ejs', require('ejs').renderFile);
 app.use(featureRender);
-...
 
 ```
 
