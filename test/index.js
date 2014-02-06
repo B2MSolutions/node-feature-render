@@ -3,12 +3,12 @@ var test = require('tape'),
 
 test('middleware test', function(t) {
   t.plan(1);
-  
+
   var req = {
+    query: {}
   };
-  
-  var res = {
-  };
+
+  var res = {};
 
   featureRender(req, res, function() {
     t.ok(true, 'it should return');
