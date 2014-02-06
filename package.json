@@ -32,6 +32,7 @@
 	"dependencies": {
   },
   "devDependencies" : {
+    "sinon": "*",
     "tape" : "*"
 	}
 }

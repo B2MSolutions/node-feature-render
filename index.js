@@ -15,6 +15,9 @@ module.exports = function(req, res, next) {
   res._render = res.render;
   res.render = function(view, options, callback) {
     var alternative = getFeatureViewName(view, req.query.ft);
+    options = options || {};
+    options.ft = req.query.ft;
+
     return fs.exists(path.join(req.app.get('views'), alternative), function(exists) {
       return res._render(exists ? alternative : view, options, callback);
     });
