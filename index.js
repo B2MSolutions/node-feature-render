@@ -3,7 +3,7 @@ var fs = require('fs'),
 
 var getFeatureViewName = function(view, toggle) {
     var ext = path.extname(view);
-    var name = view.slice(0, ext.length * -1);
+    var name = ext.length > 0 ? view.slice(0, ext.length * -1) : view;
     return name + '-' + toggle + ext;
 };
 
